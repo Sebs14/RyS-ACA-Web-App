@@ -1,11 +1,9 @@
-import LogIn from "@/components/LogIn";
-import Image from "next/image";
-import Link from "next/link";
+import LogIn from "@/app/login/components/log";
 
 export default function Home() {
   return (
     <main>
-      <LogIn/>
+      <h1 className="text-2xl font-rubik font-bold">HI</h1>
     </main>
   );
 }

@@ -30,7 +30,7 @@ const LogIn = () => {
             Inicia sesión
           </button>
           <Link
-            href="/"
+            href="/logIn"
             className="mt-4 w-full text-center font-medium font-rubik"
           >
             olvide mi contraseña
