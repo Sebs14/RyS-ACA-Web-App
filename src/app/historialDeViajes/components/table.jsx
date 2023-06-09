@@ -3,9 +3,9 @@ import React from 'react'
 
 const table = () => {
   return (
-    <div class="bg-white p-8 rounded-md w-full">
+    <div class="bg-white px-4 rounded-md w-full ">
 	    <div class=" flex items-center justify-between pb-6">
-            <div className='relative'>
+            <div className='relative ' >
                 <h2 class="text-gray-600 font-semibold font-rubik">Historial de rutas</h2>
                 <div className='bg-[#4C3175] mt-2 flex w-[41px] h-[1px] absolute -left-8'/>
             </div>
@@ -22,21 +22,21 @@ const table = () => {
             </div>
 		</div>
 		<div className=''>
-			<div class="-mx-4 sm:-mx-8 px-4 sm:px-8  overflow-x-auto">
+			<div class="-mx-4 sm:-mx-8 px-4 sm:px-8 scroll-smooth lg:scroll-auto">
 				<div class="inline-block min-w-full shadow rounded-lg  overflow-hidden">
 					<table class="min-w-full leading-normal ">
 						<thead className='font-rubik'>
 							<tr>
 								<th
-									class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+									class="px-5 py-3 border-gray-200 bg-white text-left text-xs font-semibold text-gray-600  tracking-wider">
 									ID Unidad
 								</th>
 								<th
-									class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+									class="px-5 py-3  border-gray-200 bg-white text-left text-xs font-semibold text-gray-600  tracking-wider">
 									Conductor
 								</th>
 								<th
-									class="flex px-5 py-4 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+									class="flex px-5 py-4  border-gray-200 bg-white text-left text-xs font-semibold text-gray-600  tracking-wider">
 									<div className='flex flex-col justify-center items-center mt-2'>
                                         <span>
                                             Distancia/
@@ -45,37 +45,40 @@ const table = () => {
                                     </div>
 								</th>
 								<th
-									class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+									class="px-5 py-3  border-gray-200 bg-white text-left text-xs font-semibold text-gray-600  tracking-wider">
 									Fecha
 								</th>
 								<th
-									class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+									class="px-5 py-3  border-gray-200 bg-white text-left text-xs font-semibold text-gray-600  tracking-wider">
 									Hora
 								</th>
                                 <th
-									class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+									class="px-5 py-3  border-gray-200 bg-white text-left text-xs font-semibold text-gray-600  tracking-wider">
 									Estado
-								</th>
+								</th>		
 							</tr>
+
 						</thead>
 						<tbody>
-                        <tr>
+                            <tr>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<div class="flex items-center">
 											<div class="ml-3">
 												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
+												353436
 												</p>
 											</div>
 									</div>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
+									<p class="text-gray-900 whitespace-no-wrap">Juan Hernandez</p>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
+								<div class="px-5 py-5">
+								<p class="text-green-950 flex justify-center py-1 bg-green-200 rounded-sm font-semibold">
+									43
+								</p>
+								</div>	
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<p class="text-gray-900 whitespace-no-wrap">
@@ -84,19 +87,16 @@ const table = () => {
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
+                                        class="relative inline-block px-3 py-1 text-gray-900 leading-tight">
+									<span class="relative">13:30</span>
 									</span>
 								</td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
+								<div class="px-3 py-3">
+								<p class="text-green-500 rounded-md border-gray-400 border-2 flex justify-center py-1-sm">
+									Activo
+								</p>
+								</div>	
 								</td>
 							</tr>
                             <tr>
@@ -104,18 +104,20 @@ const table = () => {
 									<div class="flex items-center">
 											<div class="ml-3">
 												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
+												353436
 												</p>
 											</div>
 									</div>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
+									<p class="text-gray-900 whitespace-no-wrap">Juan Hernandez</p>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
+								<div class="px-5 py-5">
+								<p class="text-green-950 flex justify-center py-1 bg-green-200 rounded-sm font-semibold">
+									43
+								</p>
+								</div>	
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<p class="text-gray-900 whitespace-no-wrap">
@@ -124,19 +126,16 @@ const table = () => {
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
+                                        class="relative inline-block px-3 py-1 text-gray-900 leading-tight">
+									<span class="relative">13:30</span>
 									</span>
 								</td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
+								<div class="px-3 py-3">
+								<p class=" rounded-md border-gray-400 border-2 text-sky-300 flex justify-center py-1-sm">
+									En Progreso
+								</p>
+								</div>	
 								</td>
 							</tr>
                             <tr>
@@ -144,18 +143,20 @@ const table = () => {
 									<div class="flex items-center">
 											<div class="ml-3">
 												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
+												353436
 												</p>
 											</div>
 									</div>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
+									<p class="text-gray-900 whitespace-no-wrap">Juan Hernandez</p>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
+								<div class="px-5 py-5">
+								<p class="text-green-950 flex justify-center py-1 bg-green-200 rounded-sm font-semibold">
+									43
+								</p>
+								</div>	
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<p class="text-gray-900 whitespace-no-wrap">
@@ -164,19 +165,16 @@ const table = () => {
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
+                                        class="relative inline-block px-3 py-1 text-gray-900 leading-tight">
+									<span class="relative">13:30</span>
 									</span>
 								</td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
+								<div class="px-3 py-3">
+								<p class=" rounded-md border-gray-400 border-2 text-red-500 flex justify-center py-1-sm">
+									Incompleto
+								</p>
+								</div>	
 								</td>
 							</tr>
                             <tr>
@@ -184,18 +182,20 @@ const table = () => {
 									<div class="flex items-center">
 											<div class="ml-3">
 												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
+												353436
 												</p>
 											</div>
 									</div>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
+									<p class="text-gray-900 whitespace-no-wrap">Juan Hernandez</p>
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
+								<div class="px-5 py-5">
+								<p class="text-green-950 flex justify-center py-1 bg-green-200 rounded-sm font-semibold">
+									43
+								</p>
+								</div>	
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<p class="text-gray-900 whitespace-no-wrap">
@@ -204,179 +204,16 @@ const table = () => {
 								</td>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
+                                        class="relative inline-block px-3 py-1 text-gray-900 leading-tight">
+									<span class="relative">13:30</span>
 									</span>
 								</td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-							</tr>
-                            <tr>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<div class="flex items-center">
-											<div class="ml-3">
-												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
-												</p>
-											</div>
-									</div>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										Jan 21, 2020
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-							</tr>
-                            <tr>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<div class="flex items-center">
-											<div class="ml-3">
-												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
-												</p>
-											</div>
-									</div>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										Jan 21, 2020
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-							</tr>
-                            <tr>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<div class="flex items-center">
-											<div class="ml-3">
-												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
-												</p>
-											</div>
-									</div>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										Jan 21, 2020
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-							</tr>
-                            <tr>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<div class="flex items-center">
-											<div class="ml-3">
-												<p class="text-gray-900 whitespace-no-wrap">
-													Vera Carpenter
-												</p>
-											</div>
-									</div>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">Admin</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										43
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<p class="text-gray-900 whitespace-no-wrap">
-										Jan 21, 2020
-									</p>
-								</td>
-								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
-								</td>
-                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-									<span
-                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                        <span aria-hidden
-                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-									<span class="relative">Activo</span>
-									</span>
+								<div class="px-3 py-3">
+								<p class=" rounded-md border-gray-400 border-2 text-green-950 flex justify-center py-1-sm">
+									Pendiente
+								</p>
+								</div>	
 								</td>
 							</tr>
 						</tbody>
