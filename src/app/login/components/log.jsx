@@ -41,4 +41,4 @@ const Log = () => {
   );
 };
 
-export default LogIn;
+export default Log;
