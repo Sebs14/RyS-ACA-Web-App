@@ -10,7 +10,7 @@ import { Progress, Typography } from "@/components/ExportFile";
 import { faArrowsRotate, faArrowTrendUp} from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 
-const page = () => {
+const Page = () => {
 
     let [isOpen, setIsOpen] = useState(false)
 
@@ -195,4 +195,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
