@@ -1,5 +1,6 @@
-import Image from 'next/image'
+
 import React from 'react'
+import Link from 'next/link';
 
 const table = () => {
   return (
@@ -10,9 +11,9 @@ const table = () => {
                 <div className='bg-[#4C3175] mt-2 flex w-[41px] h-[1px] absolute -left-8'/>
             </div>
             <div class="flex items-center justify-between">
-                <button className="w-[188px] h-[39px] px-[38.10px] py-[13.10px] bg-orange-500 rounded-lg justify-center items-center gap-[11.91px] inline-flex">
+			<Link href="/historialConductor/newRoute" className="w-[188px] h-[39px] px-[38.10px] py-[13.10px] bg-orange-500 rounded-lg justify-center items-center gap-[11.91px] inline-flex hover:bg-orange-600">
 				<span className="font-rubik font-semibold text-white text-md ">Agregar Ruta</span>
-				</button>
+			</Link>
             </div>
 		</div>
 		<div className=''>

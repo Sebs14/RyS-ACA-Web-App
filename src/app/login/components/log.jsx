@@ -30,7 +30,7 @@ const Log = () => {
             Inicia sesión
           </button>
           <Link
-            href="/logIn"
+            href="/newRoute"
             className="mt-4 w-full text-center font-medium font-rubik"
           >
             olvide mi contraseña
