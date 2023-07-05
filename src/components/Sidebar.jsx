@@ -9,6 +9,17 @@ const Sidebar = ({historialPage, unidadesPage, conductoresPage, user }) => {
   return (
     <aside className="flex flex-col w-64 h-[92vh] px-5 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l shadow-md">
         <div className="flex flex-col justify-between flex-1 mt-6">
+            <div className="flex gap-2 justify-center items-center">
+                <div className="border border-[#4C3175] rounded-full overflow-hidden bg-[#F2EBD8] p-1 border-spacing-3">
+                <Image
+                    src="/company.jpg"
+                    width={40}
+                    height={40}
+                    className="rounded-full"
+                />
+                </div>
+                <p className="font-rubik font-semibold">Nombre de Usuario</p>
+            </div>
             <nav className="-mx-3 space-y-6 ">
                 <div className="space-y-3 ">
                     { user === "conductor" ? 
