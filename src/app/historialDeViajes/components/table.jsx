@@ -56,7 +56,10 @@ const table = () => {
                 </tr>
               </thead>
               <tbody>
-                
+                <Row idFreight="1" placa="C-123122" tonage="43" conductor="JUAN ALBERTO" fecha="27/04/2023"/>
+				<Row idFreight="1" placa="C-123122" tonage="43" conductor="JUAN ALBERTO" fecha="27/04/2023"/>
+				<Row idFreight="1" placa="C-123122" tonage="43" conductor="JUAN ALBERTO" fecha="27/04/2023"/>
+				<Row idFreight="1" placa="C-123122" tonage="43" conductor="JUAN ALBERTO" fecha="27/04/2023"/>
               </tbody>
             </table>
             <div class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
