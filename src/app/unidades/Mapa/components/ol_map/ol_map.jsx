@@ -5,7 +5,7 @@ import Layers from "./components/layers/layers";
 import TileLayer from "./components/layers/tile_layer";
 import VectorLayer from "./components/layers/vector_layer";
 import { Circle as CircleStyle, Fill, Stroke, Style } from "ol/style";
-import { osm, vector } from "./Source";
+import { osm, vector } from "./source";
 import { fromLonLat, get } from "ol/proj";
 import GeoJSON from "ol/format/GeoJSON";
 import Controls from "./components/controls/controls";
