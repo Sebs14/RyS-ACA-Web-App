@@ -3,7 +3,7 @@ import React from "react";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Navbar from '../../components/Navbar'
+// import Navbar from '../../components/Navbar'
 import Sidebar from "@/components/Sidebar";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 import { Progress, Typography } from "@/components/ExportFile";
@@ -23,10 +23,9 @@ const Page = () => {
   function openModal() {
     setIsOpen(true);
   }
-
+  // <Navbar />
   return (
     <div>
-      <Navbar />
       <div className="flex">
         <Sidebar
           historialPage={false}
