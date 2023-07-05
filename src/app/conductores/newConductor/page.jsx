@@ -11,7 +11,7 @@ const NewConductor = () => {
   let [isOpen, setIsOpen] = useState(false)
 
   function redirectUser(){
-    router.push("http://localhost:3000/conductores/");
+    router.push("/conductores");
   }
 
   function submitNewConductor(){
