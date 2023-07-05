@@ -6,13 +6,11 @@ import {faArrowTrendUp, faCaravan, faPersonRunning} from '@fortawesome/free-soli
 import Image from 'next/image'
 
 const Sidebar = ({historialPage, unidadesPage, conductoresPage, user }) => {
-    const getCurrentUser = () => {
-        const user = localStorage.getItem("Correo");
-    };
 
     useEffect(() => {
-    getCurrentUser()
+        const user = localStorage.getItem("Correo");
     }, [])
+    
   return (
     <aside className="flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l shadow-md">
         <div className="flex flex-col justify-between flex-1 mt-6">
@@ -82,7 +80,7 @@ const Sidebar = ({historialPage, unidadesPage, conductoresPage, user }) => {
                         className="rounded-full"
                     />
                 </div>
-                <p className="font-rubik font-semibold">{localStorage.getItem("Correo")}</p>
+                <p className="font-rubik font-semibold">{user}</p>
             </div>
         </div>
     </aside>
