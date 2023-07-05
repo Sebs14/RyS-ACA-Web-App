@@ -3,7 +3,7 @@ import React from 'react'
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/navbar'
 import Sidebar from '@/components/Sidebar'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import { Progress, Typography } from "@/components/ExportFile";
