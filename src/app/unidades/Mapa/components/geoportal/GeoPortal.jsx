@@ -16,7 +16,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import GPS from "../../../../../datasets/gps.json";
 import { useState } from "react";
-import { osm, xyz } from "../ol_map/Source";
+import { osm, xyz } from "../ol_map/source";
 
 
 
