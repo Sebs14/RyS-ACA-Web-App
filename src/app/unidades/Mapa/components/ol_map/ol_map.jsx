@@ -23,7 +23,7 @@ let styles = {
 
 export default function OlMap({ features, mapSource, selectedGeoJsonLayer }) {
   const [center, setCenter] = useState([-88.85, 13.6984]);
-  const [zoom, setZoom] = useState(9);
+  const [zoom, setZoom] = useState(9.5);
   const [geoJsonObject, setGeoJsonObject] = useState(null);
   const [currentMapSource, setCurrentMapSource] = useState(null);
 

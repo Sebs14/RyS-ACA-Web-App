@@ -84,7 +84,8 @@ const Page = () => {
             </label>
             <Link
               href={"/unidades/Mapa"}
-              className="w-[255px] h-[178px] p-4 flex font-bold font-rubik flex-col items-center justify-center gap-3 bg-white rounded-2xl shadow hover:transform hover:scale-105 hover:duration-200"
+              className="w-[255px] h-[178px] p-4 flex font-bold font-rubik flex-col items-center justify-center gap-3 bg-white rounded-2xl shadow 
+              hover:scale-105 hover:duration-200"
             >
               <FontAwesomeIcon icon={faMap} size="2x" />
                 Ver mapa de la ruta

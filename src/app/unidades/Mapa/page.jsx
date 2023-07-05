@@ -6,6 +6,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import GeoPortal from "./components/geoportal/GeoPortal";
+import Link from "next/link"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,6 +57,7 @@ const page = () => {
           aria-label="basic tabs example"
         >
           <Tab label=" Tracking de cargamento " />
+          <Link href="/unidades" className=" flex items-center font-thin text-blue-700 font-rubik ml-36   border-b-2 px-2 border-blue-800 hover:duration-1000 hover:bg-blue-700  hover:text-white">Regresar</Link>
         </Tabs>
       </Box>
       <TabPanel value={currentTab} index={0}>
@@ -68,6 +70,7 @@ const page = () => {
             onActiveGeoJsonLayerChange={handleActiveGeoJsonLayerChange}
             activeGeoJsonLayer={activeGeoJsonLayer}
           />
+       
         </div>
       </TabPanel>
     </div>
