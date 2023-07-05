@@ -12,6 +12,7 @@ const login = (email, password) => {
     console.log(response);
     var cadena = JSON.stringify(response.data.token).replace(/['"]+/g, "");
 
+    localStorage.setItem("Correo", email);
     localStorage.setItem("token", cadena);
     return response.data;
   });
