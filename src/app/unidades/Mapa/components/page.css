@@ -1,0 +1,11 @@
+.World-Section {
+    display: block;
+    position: relative;
+}
+
+.World-Controls {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
