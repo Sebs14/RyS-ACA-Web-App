@@ -10,7 +10,7 @@ const table = () => {
 
   const fetchFreights = async () => {
     const response = await getFreights();
-    setFreights(response.data);
+    setFreights(response);
 
 	console.log(freights)
   };
