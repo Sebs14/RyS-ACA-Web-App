@@ -57,10 +57,10 @@ Luego, para correr el programa en localhost corremos el comando
 
 ## Authors
 
-- [@Sebs14](https://github.com/Sebs14) 
-- [@rjmendezl](https://github.com/rjmendezl) 
-- [@Okalos1](https://github.com/Okalos1)
-- [@andreayalad](https://github.com/andreayalad) 
+- [@Sebs14](https://github.com/Sebs14) (FrontEnd)
+- [@rjmendezl](https://github.com/rjmendezl) (Backend)
+- [@Okalos1](https://github.com/Okalos1)(Backend)
+- [@andreayalad](https://github.com/andreayalad) (FrontEnd)
 
 
 
