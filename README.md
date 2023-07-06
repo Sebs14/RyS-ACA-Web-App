@@ -9,6 +9,39 @@ El proyecto RyS Transportes es un sistema de tracking de unidades de carga, en e
 * Consultar por medio de Geolocation en tiempo real
 * Mantener control de las rutas completadas, pendientes e incompletas
 
+## Contenido del manual técnico.
+### Requerimientos técnicos
+
+Requerimientos mínimos para la utilización del aplicativo :
+  - Windows 10 64-bit: Pro, Enterprise, or Education (Build 16299 o superior).
+  - Procesador de 64 bits.
+  - 4 GB RAM.
+
+## Listado de rutas mapeadas a nivel de API:
+| Consulta HTTP          | Método       | Response     |
+| -----------------| --------- | --------- |
+| http://localhost:8080/auth/signin |POST| Token para acceder a demás consultas |
+| http://localhost:8080/auth/signup |POST| Registo de nuevo usuario en Base de Datos  |
+| http://localhost:8080/units/add |POST| Registo de una nueva unidad  |
+|   http://localhost:8080/units   |GET| Obtener listado de todas las unidades a nivel de BD       |
+|http://localhost:8080/units|PUT|Actualizar unidad ya existente|
+|http://localhost:8080/units/{id}|DELETE|Eliminar units por ID|
+|http://localhost:8080/freights |GET|Obtener listado de todas los fletes a nivel de BD|
+|http://localhost:8080/freights/{id} |GET|Obtener fletes por ID a nivel de BD|
+|http://localhost:8080/freights|POST|Registrar nuevo flete|
+|http://localhost:8080/freights|PUT|Actualizar flete ya existente|
+|http://localhost:8080/user|GET|Obtener todos los usuarios a nivel de BD|
+|http://localhost:8080/clients|GET|Obtener listado de todos los clientes|
+|http://localhost:8080/clients/{id}|GET|Obtener cliente por ID|
+|http://localhost:8080/clients|POST|Crear nuevo cliente|
+|http://localhost:8080/clients|PUT|Actualizar cliente ya existente|
+|http://localhost:8080/clients/{id}|DELETE|Eliminar cliente por ID|
+|http://localhost:8080/empfreight|GET|Obtener todos los empleados por flete|
+|http://localhost:8080/empfreig|GET|Obtener todos los empleados por flete|
+|http://localhost:8080/empfreight|POST|Crear empleados por flete|
+|http://localhost:8080/empfreight|PUT|Actualizar empleados por flete ya existente|
+|http://localhost:8080/empfreight/{id}|DELETE|Eliminar empleados por flete por ID|
+
 ## Features
 
 - Historial de Rutas
