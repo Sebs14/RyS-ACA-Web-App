@@ -68,6 +68,8 @@ Requerimientos mínimos para la utilización del aplicativo :
 
 ![alt text](/public/NuevoConductor.png "viajes")
 
+Para mayor detalle sobre las funcionalidades, puede consultar [Manual de Usuario](https://drive.google.com/file/d/1XZUcZSqcor6LFCLnzUlqhz7FZNU4EZaf/view?usp=sharing)
+
 ## License
 El software se encuentra licenciado con [MIT](https://choosealicense.com/licenses/mit/), ya que nuestro principal objetivo es que la colaboración en el proyecto sea continúa y que diferentes empresas puedan adaptarlo a sus necesidad basandose en el código fuente de RyS Transportes, con la única condición que el software que se extienda de este continue siendo Open Source
 
